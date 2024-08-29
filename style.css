@@ -1,0 +1,344 @@
+:root{
+    --bg-fondo:#202124;
+    --bg-navbar:#ffffff;
+    --bg-title:#ffffff;
+    --bg-link:#207cdc;
+    --bg-boton:#303134;
+    --bg-footer:#171717;
+    --font:"Georama", sans-serif;
+    
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: "Georama", sans-serif; 
+  
+}
+li{
+    list-style: none;
+    cursor: pointer;
+    
+
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #444746;
+   
+
+}
+a:hover{
+   text-decoration: underline;
+}
+p{
+ color: #9e9e9e;
+}
+.quechua{
+    color: var(--bg-link);
+}
+header{
+    width: 100%;
+    height: 100%;
+   
+
+}
+
+header .nav-header ul{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 0.5rem;
+    padding-right: 1rem;
+}
+.menu-icon{
+    background-image: url("https://ssl.gstatic.com/gb/images/bar/al-icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.btn-iniciar{
+    background-color:#0b57d0 ;
+    color: #ffffff;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    border: none;
+    font-family: "Georama", sans-serif; 
+}
+.btn-iniciar:hover{
+    box-shadow: 0 1px 4px 0 #0b57d0;
+    border-color: #dfe1e500;
+}
+main{
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+   
+}
+main .main-logo img{
+    width: 30rem;
+}
+main .main-input {
+    width: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+ 
+   
+}
+main .main-input-container {
+    border-radius: 100px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+   
+   
+}
+main .main-input input {
+   
+    width: 24rem;
+    height: 2.5rem;
+    border: none;
+    outline: none;
+
+    
+}
+main .main-input-container:hover {
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+}
+
+main .main-input .search-icon {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-left: 0.5rem;
+
+ 
+}
+main .main-input .micro-icon {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 1.8rem;
+    height:  1.8rem;
+    cursor: pointer;
+  
+}
+main .main-input .busquedad-icon{
+    background-image: url("https://img.captain-droid.com/wp-content/uploads/2019/01/com-google-ar-lens-icon.png.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    width: 1.8rem;
+    height:  1.8rem;
+    margin-right: 0.5rem;
+}
+main .main-buttons{
+    display: flex;
+    gap: 1rem;
+}
+.btn{
+    width: 12rem;
+    height: 2.5rem;
+    font-size: 1.1rem;
+    font-family:"Georama", sans-serif; 
+    background-color: #f8f9fa;
+    border: none;
+   
+    color: #716e6e;
+}
+.btn:hover{
+    box-shadow: 1px 1px 3px 1px #20212447;
+    border-color: #dfe1e500;
+}
+main .main-credito{
+    color: #716e6e;
+    font-size: 1.1rem;
+}
+main .main-credito a{
+    color: #1a5ec9;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 7vh;
+    font-size: 1rem;
+    
+    
+   
+   
+   
+}
+footer .footer-peru{
+    display: flex;
+    align-items: center;
+    height: 3vh;
+
+    position: relative;
+    }
+footer .footer-peru p{
+ position: absolute;
+  font-size: 1rem;
+  margin: 0px 0px 0px 5px;
+  
+  color: #444746;
+}
+footer .footer-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    border-top:1px solid #d3d0d0b0;
+   
+    margin: 0px 5px;
+   
+    
+}
+footer .footer-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 1rem;
+    padding: 0;
+ 
+   
+   
+}
+footer .footer-right{
+    
+    display: flex;
+    justify-content: end;
+    padding: 0;
+    gap: 1rem;
+   
+  
+}
+
+@media (min-width:720px){
+    header .nav-header a{
+         font-size: 1.6rem;  
+    }
+    header .nav-header ul{
+        gap: 1.5rem;
+    }
+    main .main-logo img{
+        width: 40rem;
+    }
+    main .main-input input {
+   
+        width: 35rem;   
+        height: 3rem;
+    }
+    .btn{
+        width: 17rem;
+        height: 3.5rem;
+        font-size: 1.5rem;
+      
+    }
+    main .main-credito{
+       
+        font-size: 1.3rem;
+    }
+    footer{
+    
+       font-size: 1.3rem;
+       
+    
+    }
+    footer .footer-peru p{
+        font-size: 1.5rem;
+     
+    }
+   
+    footer .footer-left{
+       
+        margin: 2px 2px 0px 0px;
+     
+       
+       
+    }
+    footer .footer-right{
+    
+        margin: 2px 2px 0px 0px;
+       
+      
+    }
+ 
+   
+ 
+   
+
+}
+@media (min-width:1000px){
+    header .nav-header a{
+        font-size:2rem;  
+    }
+  
+    main .main-logo img{
+        width: 50rem;
+    }
+    main .main-input input {
+        width: 50rem;   
+        height: 4rem;
+       
+    }
+  
+    footer{
+    
+        height: 10vh;
+       font-size: 1.7rem;
+    
+    }
+    footer .footer-peru p{
+    
+        padding: 10px;
+        font-size: 1.7rem;
+    }
+    footer .footer-links{
+    
+      
+        margin: 5px 20px;
+        padding: 5px;
+      
+       
+      
+       
+    }
+       
+       
+     
+       
+       
+ 
+ 
+   
+ 
+   
+
+}
+
+
+
